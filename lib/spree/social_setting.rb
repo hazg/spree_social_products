@@ -13,7 +13,6 @@ module Spree
     preference :facebook_verb_to_display, :string,  default: 'like'
     preference :facebook_color_scheme,    :string,  default: 'light'
     preference :facebook_send_button,     :boolean, default: false
-    preference :twitter_id,               :string
 
     def facebook_layouts
       %w(standard button_count box_count button)
