@@ -23,7 +23,7 @@ module Spree
     end
 
     def twitter_text(product)
-      "#{product.name} Get it Here - #{spree.product_url(product)} "
+      "#{product.name} Description: #{truncate(product.description, length: 50)} Get it Here - #{spree.product_url(product)} "
     end
 
     private

@@ -1,6 +1,5 @@
-<% title = Spree.t(:share_on_tumblr, scope: [:social, :buttons]) %>
-<%= link_to 'http://www.tumblr.com/share/link?' + { url: spree.product_url(@product), name: @product.name, description: @product.description }.to_param, title: title, class: 'tumblr-share' do %>
-  <%= title %>
-<% end %>
-
-<script src="//platform.tumblr.com/v1/share.js"></script>
+<a class="tumblr-share-button" href="https://www.tumblr.com/share"
+  data-href="<%= spree.product_url(@product) %>"
+>
+</a>
+<script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>
