@@ -22,6 +22,10 @@ module Spree
       request.protocol + request.host + url
     end
 
+    def twitter_text(product)
+      "#{product.name} Get it Here - #{spree.product_url(product)} "
+    end
+
     private
 
     def escape(string)
