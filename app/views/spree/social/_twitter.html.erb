@@ -1,4 +1,11 @@
-<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">
+<a class="twitter-share-button"
+  href="https://twitter.com/share"
+  data-text="<%= twitter_text(@product) %>"
+  data-url="/"
+  data-hashtags="example,demo"
+  data-via="shivamjain49"
+  data-related="shivamjain49">
   <%= Spree.t(:tweet, scope: [:social, :buttons]) %>
 </a>
-<script src="//platform.twitter.com/widgets.js"></script>
+
+<script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
