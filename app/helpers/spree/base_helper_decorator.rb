@@ -18,8 +18,7 @@ module Spree
     end
 
     def absolute_image_url(url)
-      return url if url.starts_with? 'http'
-      request.protocol + request.host + url
+      URI.join(request.url, url).to_s
     end
 
     def twitter_text(product)
