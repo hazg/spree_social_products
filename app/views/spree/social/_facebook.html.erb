@@ -4,8 +4,8 @@
     <meta property="og:type"               content="product" />
     <meta property="og:title"              content="<%= @product.name %>" />
     <meta property="og:description"        content="<%= @product.description %>" />
-    <% @product.images.each do |img| %>
-      <meta property="og:image" content="<%= absolute_image_url(img.attachment.url) %>" />
+    <% if @product.images.present? %>
+      <meta property="og:image" content="<%= absolute_image_url(@product.images.first.attachment.url) %>" />
     <% end %>
 
     <meta property="fb:app_id" content="<%= Spree::Social::Config.preferred_facebook_app_id %>" />
