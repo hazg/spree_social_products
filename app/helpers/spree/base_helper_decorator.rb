@@ -29,6 +29,14 @@ module Spree
       Spree::Social::Config.social_services.any? { |service| Spree::Social::Config.send "preferred_#{service}_button".to_sym }
     end
 
+    def reddit_text(product)
+      if product.images.present?
+        "#{product.description} [Image] (#{absolute_image_url(product.images.first.attachment.url)}) [Get It Here] (#{spree.product_url(product)})"
+      else
+        "#{product.description} [Get It Here] (#{spree.product_url(product)})"
+      end
+    end
+
     private
 
     def escape(string)
