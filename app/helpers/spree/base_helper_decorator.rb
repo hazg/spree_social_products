@@ -25,6 +25,10 @@ module Spree
       "#{product.name} Description: #{truncate(product.description, length: 50)} Get it Here - #{spree.product_url(product)} "
     end
 
+    def social_media_share_allowed?
+      Spree::Social::Config.social_services.any? { |service| Spree::Social::Config.send "preferred_#{service}_button".to_sym }
+    end
+
     private
 
     def escape(string)
