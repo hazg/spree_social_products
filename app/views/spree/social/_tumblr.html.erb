@@ -1,7 +1,7 @@
 <% if @product.images.present? %>
   <a class="tumblr-share-button" href="https://www.tumblr.com/share"
     data-content="<%= absolute_image_url(@product.images.first.attachment.url) %>"
-    data-caption="<%= @product.name %> "
+    data-caption="<%= "#{@product.name} #{@product.description}" %>"
     data-posttype="photo"
     data-href="<%= spree.product_url(@product) %>"
   >
