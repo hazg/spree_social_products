@@ -10,6 +10,20 @@ There is some default styling that works well with the default spree theme, but 
 ![Screenshot](http://i.minus.com/iPkrAfsR0nphT.png)
 
 ---
+Demo
+----
+Try Spree Social Products for Spree master with direct deployment on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vinsol-spree-contrib/spree-demo-heroku/tree/spree-social-products-master)
+
+Try Spree Social Products for Spree 3-4 with direct deployment on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vinsol-spree-contrib/spree-demo-heroku/tree/spree-social-products-3-4)
+
+Try Spree Social Products for Spree 3-1 with direct deployment on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vinsol-spree-contrib/spree-demo-heroku/tree/spree-social-products-3-1)
+---
 
 ## Installation
 
