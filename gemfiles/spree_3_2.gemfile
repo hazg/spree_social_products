@@ -3,5 +3,10 @@
 source "http://rubygems.org"
 
 gem "spree", "~> 3.2.0"
+gem "spree_auth_devise", github: "spree/spree_auth_devise"
+
+group :test do
+  gem "rails-controller-testing"
+end
 
 gemspec path: "../"

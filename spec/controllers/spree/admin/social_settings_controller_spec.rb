@@ -13,7 +13,6 @@ RSpec.describe Spree::Admin::SocialSettingsController, type: :controller do
             tumblr_button: true
             pinterest_button: true
             facebook_button: false
-            delicious_button: true
             reddit_button: true
             facebook_app_id
             facebook_layout: button_count
@@ -46,11 +45,6 @@ RSpec.describe Spree::Admin::SocialSettingsController, type: :controller do
       it 'sets facebook_button to false' do
         spree_put :update, preferences: { facebook_button: false }
         expect(subject.preferred_facebook_button).to be(false)
-      end
-
-      it 'sets delicious_button to true' do
-        spree_put :update, preferences: { delicious_button: true }
-        expect(subject.preferred_delicious_button).to be(true)
       end
 
       it 'sets reddit_button to true' do
