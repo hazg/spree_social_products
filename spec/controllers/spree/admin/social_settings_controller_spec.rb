@@ -87,14 +87,6 @@ RSpec.describe Spree::Admin::SocialSettingsController, type: :controller do
         spree_put :update, preferences: { facebook_send_button: false }
         expect(subject.preferred_facebook_send_button).to be(false)
       end
-<<<<<<< HEAD
-
-      it 'sets twitter_id to "123"' do
-        spree_put :update, preferences: { twitter_id: '123' }
-        expect(subject.preferred_twitter_id).to eq('123')
-      end
-=======
->>>>>>> Refactor social share settings.
     end
   end
 
