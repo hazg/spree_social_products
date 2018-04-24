@@ -6,12 +6,10 @@ RSpec.feature 'Settings for Social Sharing', :js do
 
     # Show all Facebook options.
     check 'facebook_button'
-
     uncheck 'twitter_button'
     uncheck 'google_plus_button'
     check 'tumblr_button'
     check 'pinterest_button'
-    check 'delicious_button'
     check 'reddit_button'
     select2 'button_count', from: 'Button Type'
     check 'facebook_show_faces'
@@ -29,7 +27,6 @@ RSpec.feature 'Settings for Social Sharing', :js do
     expect(setting.preferred_google_plus_button).to be(false)
     expect(setting.preferred_tumblr_button).to be(true)
     expect(setting.preferred_pinterest_button).to be(true)
-    expect(setting.preferred_delicious_button).to be(true)
     expect(setting.preferred_reddit_button).to be(true)
     expect(setting.preferred_facebook_layout).to eq 'button_count'
     expect(setting.preferred_facebook_show_faces).to be(true)

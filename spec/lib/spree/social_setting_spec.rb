@@ -25,7 +25,7 @@ RSpec.describe Spree::SocialSetting do
   context '.social_services' do
     it 'has a list of services' do
       expect(subject.social_services).to be_a Array
-      expect(subject.social_services).to match_array %w(twitter facebook pinterest google_plus delicious reddit tumblr)
+      expect(subject.social_services).to match_array %w(twitter facebook pinterest google_plus reddit tumblr)
     end
   end
 end
