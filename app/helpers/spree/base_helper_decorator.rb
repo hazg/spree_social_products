@@ -22,7 +22,14 @@ module Spree
     end
 
     def twitter_text(product)
-      "#{product.name} Description: #{truncate(product.description, length: 50)} Get it Here - #{spree.product_url(product)} "
+      values = {
+        product_text: "#{product.name} #{product.description}",
+        product_link: spree.product_url(product),
+        get_it_here: "Get It Here -",
+        twitter_limit: 280
+      }
+
+      get_twitter_text(values)
     end
 
     def social_media_share_allowed?
@@ -41,6 +48,16 @@ module Spree
 
     def escape(string)
       URI.escape string, /[^#{URI::PATTERN::UNRESERVED}]/
+    end
+
+    def get_twitter_text(values)
+      remaining_length = values[:twitter_limit] - values[:get_it_here].length - values[:product_link].length - 3 # 3 spaces
+
+      if remaining_length > values[:product_text].length
+        "#{values[:product_text]} #{values[:get_it_here]} #{values[:product_link]}"
+      else
+        "#{truncate(values[:product_text], length: remaining_length)} #{values[:get_it_here]} #{values[:product_link]}"
+      end
     end
   end
 end
