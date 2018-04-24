@@ -68,6 +68,17 @@ You may refer to https://developers.facebook.com/docs/reference/plugins/like/ to
 
 ---
 
+## Testing
+
+We test this extension using RSpecs. To run the test cases, run -
+
+```ruby
+  bundle exec rake test_app
+  bundle exec rpsec spec
+```
+
+---
+
 ## Contributing
 
 See corresponding [guidelines][1]
