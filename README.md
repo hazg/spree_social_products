@@ -1,13 +1,8 @@
 # Spree Social Products
 
-[![Build Status](https://travis-ci.org/spree-contrib/spree_social_products.svg?branch=3-0-stable)](https://travis-ci.org/spree-contrib/spree_social_products)
-[![Code Climate](https://codeclimate.com/github/spree-contrib/spree_social_products/badges/gpa.svg)](https://codeclimate.com/github/spree-contrib/spree_social_products)
-
 A Spree extension that allows you to add social network sharing buttons (e.g. the Facebook like button) to your product pages.
 
 There is some default styling that works well with the default spree theme, but this can be overrided.
-
-![Screenshot](http://i.minus.com/iPkrAfsR0nphT.png)
 
 ---
 Demo
@@ -30,7 +25,7 @@ Try Spree Social Products for Spree 3-1 with direct deployment on Heroku:
 Add this extension to your `Gemfile`:
 
 ```ruby
-gem 'spree_social_products', github: 'spree-contrib/spree_social_products', branch: '3-0-stable'
+gem 'spree_social_products', github: 'vinsol-spree-contrib/spree_social_products', branch: '3-4-stable'
 ```
 
 Then run:
