@@ -1,6 +1,19 @@
-<% title = Spree.t(:share_on_tumblr, scope: [:social, :buttons]) %>
-<%= link_to 'http://www.tumblr.com/share/link?' + { url: spree.product_url(@product), name: @product.name, description: @product.description }.to_param, title: title, class: 'tumblr-share' do %>
-  <%= title %>
+<% if @product.images.present? %>
+  <a class="tumblr-share-button" href="https://www.tumblr.com/share"
+    data-content="<%= absolute_image_url(@product.images.first.attachment.url) %>"
+    data-caption="<%= "#{@product.name} #{@product.description}" %>"
+    data-posttype="photo"
+    data-href="<%= spree.product_url(@product) %>"
+  >
+<% else %>
+  <a class="tumblr-share-button" href="https://www.tumblr.com/share"
+    data-content="<%= spree.product_url(@product) %>"
+    data-caption="<%= @product.description %>"
+    data-title="<%= @product.name %> "
+    data-posttype="link"
+    data-href="<%= spree.product_url(@product) %>"
+  >
 <% end %>
+</a>
 
-<script src="//platform.tumblr.com/v1/share.js"></script>
+<script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>

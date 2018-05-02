@@ -1,5 +1,7 @@
 <div id="social_nav">
-  <h6><%= Spree.t(:bookmark_or_share_this, scope: :social) %></h6>
+  <% if social_media_share_allowed? %>
+    <h6><%= Spree.t(:bookmark_or_share_this, scope: :social) %></h6>
+  <% end %>
   <ul>
     <% if Spree::Social::Config.preferred_twitter_button %>
       <li class="twitter">
@@ -19,11 +21,6 @@
     <% if Spree::Social::Config.preferred_tumblr_button %>
       <li class="tumblr">
         <%= render 'spree/social/tumblr' %>
-      </li>
-    <% end %>
-    <% if Spree::Social::Config.preferred_delicious_button %>
-      <li class="delicious">
-        <%= render 'spree/social/delicious' %>
       </li>
     <% end %>
     <% if Spree::Social::Config.preferred_google_plus_button %>
