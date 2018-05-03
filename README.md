@@ -25,7 +25,7 @@ Try Spree Social Products for Spree 3-1 with direct deployment on Heroku:
 Add this extension to your `Gemfile`:
 
 ```ruby
-gem 'spree_social_products', github: 'vinsol-spree-contrib/spree_social_products', branch: '3-4-stable'
+gem 'spree_social_products', github: 'vinsol-spree-contrib/spree_social_products', branch: 'master'
 ```
 
 Then run:
