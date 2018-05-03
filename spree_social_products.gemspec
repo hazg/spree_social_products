@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'spree_core', '~> 3.0.0'
+  s.add_runtime_dependency 'spree_core', '~> 3.1.0'
 
   s.add_development_dependency 'capybara', '~> 2.4.4'
   s.add_development_dependency 'coffee-rails', '~> 4.0.0'
@@ -28,8 +28,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'poltergeist', '~> 1.6.0'
   s.add_development_dependency 'selenium-webdriver', '>= 2.44'
-  s.add_development_dependency 'rspec-rails', '~> 3.2.0'
-  s.add_development_dependency 'sass-rails', '~> 4.0.0'
+  s.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  s.add_development_dependency 'sass-rails', '~> 5.0.0'
   s.add_development_dependency 'sqlite3', '~> 1.3.10'
   s.add_development_dependency 'simplecov', '~> 0.9.0'
   s.add_development_dependency 'pry-rails', '>= 0.3.0'
