@@ -1,14 +1,23 @@
 # Spree Social Products
 
-[![Build Status](https://travis-ci.org/spree-contrib/spree_social_products.svg?branch=master)](https://travis-ci.org/spree-contrib/spree_social_products)
-[![Code Climate](https://codeclimate.com/github/spree-contrib/spree_social_products/badges/gpa.svg)](https://codeclimate.com/github/spree-contrib/spree_social_products)
-
 A Spree extension that allows you to add social network sharing buttons (e.g. the Facebook like button) to your product pages.
 
 There is some default styling that works well with the default spree theme, but this can be overrided.
 
-![Screenshot](http://i.minus.com/iPkrAfsR0nphT.png)
+---
+Demo
+----
+Try Spree Social Products for Spree master with direct deployment on Heroku:
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vinsol-spree-contrib/spree-demo-heroku/tree/spree-social-products-master)
+
+Try Spree Social Products for Spree 3-4 with direct deployment on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vinsol-spree-contrib/spree-demo-heroku/tree/spree-social-products-3-4)
+
+Try Spree Social Products for Spree 3-1 with direct deployment on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vinsol-spree-contrib/spree-demo-heroku/tree/spree-social-products-3-1)
 ---
 
 ## Installation
@@ -16,7 +25,7 @@ There is some default styling that works well with the default spree theme, but 
 Add this extension to your `Gemfile`:
 
 ```ruby
-gem 'spree_social_products', github: 'spree-contrib/spree_social_products', branch: 'master'
+gem 'spree_social_products', github: 'vinsol-spree-contrib/spree_social_products', branch: '3-4-stable'
 ```
 
 Then run:
@@ -56,6 +65,17 @@ Spree::Social::Config.facebook_send_button = false      # true
 ```
 
 You may refer to https://developers.facebook.com/docs/reference/plugins/like/ to preview the looks of different settings.
+
+---
+
+## Testing
+
+We test this extension using RSpecs. To run the test cases, run -
+
+```ruby
+  bundle exec rake test_app
+  bundle exec rpsec spec
+```
 
 ---
 
