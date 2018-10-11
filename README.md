@@ -79,6 +79,12 @@ We test this extension using RSpecs. To run the test cases, run -
 
 ---
 
+## See It In Action
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=75AtbFQ8hAA
+" target="_blank"><img src="http://img.youtube.com/vi/75AtbFQ8hAA/0.jpg" 
+alt="Youtube Video Tutorial" /></a>
+
 ## Contributing
 
 See corresponding [guidelines][1]
