@@ -1,0 +1,24 @@
+---
+ru:
+  spree:
+    social:
+      bookmark_or_share_this: Поделиться
+      social_sharing_settings_description: Включить кнопку поделиться для продуктов
+      social_sharing_settings_updated: Параметры обновлены
+      settings: Параметры "Поделиться"
+      service_settings: Параметры сервисов
+      facebook_settings: Параметры Facebook
+      buttons:
+        delicious: Delicious
+        submit_to_reddit: Submit to Reddit
+        share_on_tumblr: Share on Tumblr
+        tweet: Tweet
+      preferences:
+        service_button: '%{service} Button'
+        facebook_layout: Button Type
+        facebook_app_id: Facebook App ID
+        facebook_show_faces: Show Faces Facebook
+        facebook_verb_to_display: Verb to Display
+        facebook_color_scheme: Color Scheme
+        facebook_send_button: Share button
+        twitter_id: Twitter ID
