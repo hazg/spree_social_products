@@ -5,7 +5,7 @@
     <meta property="og:title"              content="<%= @product.name %>" />
     <meta property="og:description"        content="<%= @product.description %>" />
     <% if @product.images.present? %>
-      <meta property="og:image" content="<%= absolute_image_url(@product.images.first.attachment.url) %>" />
+      <meta property="og:image" content="<%= Rails.application.routes.url_helpers.url_for(@product.images.first.url(:large)) %>" />
     <% end %>
 
     <meta property="fb:app_id" content="<%= Spree::Social::Config.preferred_facebook_app_id %>" />

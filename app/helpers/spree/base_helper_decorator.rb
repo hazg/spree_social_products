@@ -14,7 +14,10 @@ module Spree
     end
 
     def absolute_product_image(image)
-      escape absolute_image_url(image.attachment.url)
+      #escape absolute_image_url(
+        #image.attachment.url
+        Rails.application.routes.url_helpers.url_for(image.url(:large))
+      #)
     end
 
     def absolute_image_url(url)
